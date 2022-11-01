@@ -188,3 +188,11 @@ input:focus {
   font-size: 24px;
   font-weight: 400;
 }
+
+.git-link {
+  font-size: 14px;
+  color: #6b7280;
+  margin-right: 54px;
+  text-align: right;
+  margin-top: 80px;
+}
