@@ -1,0 +1,190 @@
+.body {
+  background-color: #f3f4f6;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  font-family: "Manrope", sans-serif;
+  background: linear-gradient(#f9fafb, #fff);
+  width: 900px;
+  height: 850px;
+  margin: 100px auto 150px;
+  box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
+  border: solid 5px #fff;
+  border-radius: 50px;
+}
+
+.city-choice {
+  padding-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.local-icon {
+  display: inline;
+  width: 45px;
+  margin-bottom: 9px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#input-city-choice {
+  display: inline;
+}
+
+.input-city {
+  border-radius: 50px;
+  border: 0;
+  width: 275px;
+  height: 40px;
+  box-shadow: 0px 2px 4px -1px rgba(140, 141, 142, 0.42);
+  padding-left: 30px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.input-city-submit {
+  font-size: 16px;
+  background-color: #fff;
+  color: #6b7280;
+  border-radius: 50px;
+  border: none;
+  width: 96px;
+  height: 40px;
+  box-shadow: 0px 2px 4px -1px rgba(140, 141, 142, 0.42);
+}
+
+.current-location-button {
+  font-size: 16px;
+  background-color: #fff;
+  color: #6b7280;
+  border-radius: 50px;
+  border: none;
+  width: 219px;
+  height: 40px;
+  box-shadow: 0px 2px 4px -1px rgba(140, 141, 142, 0.42);
+  margin-left: 50px;
+}
+
+.input-city-submit:hover {
+  color: #fff;
+  background-color: #b6c3db;
+  transition: all 0.25s ease-out;
+}
+
+.current-location-button:hover {
+  color: #fff;
+  background-color: #b6c3db;
+  transition: all 0.25s ease-out;
+}
+
+.main-weather-image {
+  width: 250px;
+  padding: 50px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actual-date {
+  color: #4b5563;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.actual-time {
+  color: #b6c3db;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.actual-city {
+  color: #4b5563;
+  font-weight: 800;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.actual-temperature {
+  color: #4b5563;
+  font-weight: 800;
+  font-size: 75px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+.units {
+  font-weight: 600;
+  font-size: 40px;
+  top: -0.85em;
+}
+
+#celsius:hover {
+  cursor: pointer;
+  font-size: 43px;
+  transition: all 0.3s ease-out;
+}
+
+#fahrenheit {
+  color: #b6c3db;
+}
+
+#fahrenheit:hover {
+  cursor: pointer;
+  font-size: 43px;
+  transition: all 0.3s ease-out;
+}
+.general-weather-description {
+  color: #b6c3db;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 0;
+}
+
+.forecast-text {
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 54px;
+}
+.five-days-forecast {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.col {
+  height: 225px;
+  margin: 0 30px;
+  background: linear-gradient(#f9fafb, #fff);
+  box-shadow: 0px 4px 5px -1px rgba(140, 141, 142, 0.22);
+  border-radius: 40px;
+}
+
+.day-of-weak {
+  text-align: center;
+  margin: 10px auto 0;
+  font-size: 18px;
+  font-family: 300;
+}
+
+.forecast-weather-image {
+  display: inline-block;
+  margin: 15px auto;
+  width: 100px;
+}
+
+.forecast-temperature {
+  text-align: center;
+  margin: 0 auto 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
