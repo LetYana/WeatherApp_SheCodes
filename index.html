@@ -28,10 +28,11 @@
         <form id="input-city-choice">
           <input
             class="input-city"
-            type="text"
+            type="search"
             placeholder="Enter a city"
             autofocus
             required
+            autocomplete="off"
           />
           <input class="input-city-submit" type="submit" value="Search" />
           <input
@@ -54,8 +55,8 @@
           <p class="actual-temperature">
             <span id="main-temp"></span
             ><sup class="units"
-              ><span id="celsius">°C</span> |
-              <span id="fahrenheit">°F</span></sup
+              ><a href="#" id="celsius" class="active">°C</a> |
+              <a href="#" id="fahrenheit">°F</a></sup
             >
           </p>
           <p class="general-weather-description"></p>

@@ -41,6 +41,7 @@ input:focus {
   height: 40px;
   box-shadow: 0px 2px 4px -1px rgba(140, 141, 142, 0.42);
   padding-left: 30px;
+  padding-right: 30px;
   color: #6b7280;
   font-size: 16px;
 }
@@ -124,21 +125,16 @@ input:focus {
   top: -0.85em;
 }
 
-#celsius:hover {
-  cursor: pointer;
-  font-size: 43px;
-  transition: all 0.3s ease-out;
+.actual-temperature .active {
+  color: #4b5563;
+  cursor: default;
+  text-decoration: none;
 }
 
-#fahrenheit {
-  color: #b6c3db;
+.actual-temperature .active:hover {
+  text-decoration: none;
 }
 
-#fahrenheit:hover {
-  cursor: pointer;
-  font-size: 43px;
-  transition: all 0.3s ease-out;
-}
 .general-weather-description {
   color: #b6c3db;
   font-weight: 600;
