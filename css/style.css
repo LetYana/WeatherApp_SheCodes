@@ -8,7 +8,7 @@
   background: linear-gradient(#f9fafb, #fff);
   width: 900px;
   height: 850px;
-  margin: 100px auto 150px;
+  margin: 50px auto 150px;
   box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
   border: solid 5px #fff;
   border-radius: 50px;
@@ -81,8 +81,8 @@ input:focus {
 }
 
 .main-weather-image {
-  width: 250px;
-  padding: 50px 0;
+  width: 275px;
+  padding: 30px 0 20px 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -145,6 +145,10 @@ input:focus {
   font-size: 20px;
   margin-top: -15px;
   margin-bottom: 0;
+}
+
+.general-weather-description:first-letter {
+  text-transform: capitalize;
 }
 
 .forecast-text {

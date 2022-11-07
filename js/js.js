@@ -50,10 +50,11 @@ function displayWeatherConditions(response) {
   document.querySelector("#main-temp").innerHTML = Math.round(
     response.data.main.temp
   );
-  let currentWeatherDescription = response.data.weather[0].description;
   document.querySelector(".general-weather-description").innerHTML =
-    currentWeatherDescription.charAt(0).toUpperCase() +
-    currentWeatherDescription.slice(1);
+    response.data.weather[0].description;
+  let iconElement = document.querySelector(".main-weather-image");
+  iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
