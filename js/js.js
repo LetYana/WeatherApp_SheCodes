@@ -54,6 +54,11 @@ function displayWeatherConditions(response) {
     Math.round(celsiusTemperature);
   document.querySelector(".general-weather-description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector(
+    ".wind"
+  ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+
+  console.log(response.data.wind.speed);
   let iconElement = document.querySelector(".main-weather-image");
   iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);

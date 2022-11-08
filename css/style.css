@@ -177,10 +177,25 @@ input:focus {
   font-size: 20px;
   margin-top: -15px;
   margin-bottom: 0;
+  display: inline-block;
 }
 
 .general-weather-description:first-letter {
   text-transform: capitalize;
+}
+
+.space {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.wind {
+  color: #b6c3db;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 0;
+  display: inline;
 }
 
 .forecast-text {
