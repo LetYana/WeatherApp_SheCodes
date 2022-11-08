@@ -3,12 +3,12 @@
   font-family: "Manrope", sans-serif;
 }
 
-.container {
+.container-sm {
   font-family: "Manrope", sans-serif;
   background: linear-gradient(#f9fafb, #fff);
-  width: 900px;
-  height: 830px;
-  margin: 50px auto 150px;
+  width: 500px;
+  height: 500px;
+  margin: 100px auto 150px;
   box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
   border: solid 5px #fff;
   border-radius: 50px;
@@ -93,7 +93,7 @@ input:focus {
   color: #4b5563;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 

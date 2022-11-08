@@ -78,22 +78,6 @@ signUpForm.addEventListener("submit", handleSubmit);
 
 //Geolocation API
 
-function showCurrentLocation(position) {
-  let apiKey = "1da1773b8d8c37236ad8e28c3090a15f";
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherConditions);
-}
-
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showCurrentLocation);
-}
-
-let currentButton = document.querySelector("#my-location");
-currentButton.addEventListener("click", getCurrentLocation);
-
 //fahrenheit
 function showFahrenheitTemp(event) {
   event.preventDefault();
