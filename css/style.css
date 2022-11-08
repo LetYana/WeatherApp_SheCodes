@@ -81,6 +81,19 @@ input:focus {
   transition: all 0.25s ease-out;
 }
 
+.sun {
+  animation: 2s ease-in-out 0s infinite alternate sun-rise;
+}
+
+@keyframes sun-rise {
+  from {
+    transform: translateX(0.5vh);
+  }
+  to {
+    transform: translateX(-0.5vh);
+  }
+}
+
 .main-weather-image {
   width: 275px;
   padding: 30px 0 20px 0;
