@@ -7,7 +7,7 @@
   font-family: "Manrope", sans-serif;
   background: linear-gradient(#f9fafb, #fff);
   width: 900px;
-  height: 850px;
+  height: 830px;
   margin: 50px auto 150px;
   box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
   border: solid 5px #fff;
@@ -123,16 +123,52 @@ input:focus {
   font-weight: 600;
   font-size: 40px;
   top: -0.85em;
+  color: #b6c3db;
 }
 
-.actual-temperature .active {
+.vertical-line {
+  color: #4b5563;
+  font-weight: lighter;
+}
+
+#fahrenheit.active {
   color: #4b5563;
   cursor: default;
   text-decoration: none;
 }
 
-.actual-temperature .active:hover {
+#fahrenheit.active:hover {
+  color: #4b5563;
+  font-size: inherit;
+  cursor: default;
   text-decoration: none;
+  transition: none;
+}
+
+#fahrenheit:hover {
+  cursor: pointer;
+  font-size: 43px;
+  transition: all 0.3s ease-out;
+}
+
+#celsius.active {
+  color: #4b5563;
+  cursor: default;
+  text-decoration: none;
+}
+
+#celsius.active:hover {
+  color: #4b5563;
+  font-size: inherit;
+  cursor: default;
+  text-decoration: none;
+  transition: none;
+}
+
+#celsius:hover {
+  cursor: pointer;
+  font-size: 43px;
+  transition: all 0.3s ease-out;
 }
 
 .general-weather-description {
@@ -151,7 +187,7 @@ input:focus {
   color: #4b5563;
   font-weight: 600;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 30px;
   margin-left: 54px;
 }
