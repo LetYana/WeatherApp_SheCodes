@@ -43,6 +43,31 @@ if (minutes < 10) {
 actualDate.innerHTML = `${month} ${date}, ${year}`;
 actualTime.innerHTML = `${day} ${hours}:${minutes}`;
 
+// Forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Mo", "Tu", "We", "Th", "Fr"];
+
+  let forecastHTML = `<div class="row" id="forecast-column">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <img class="forecast-image" src="src/01d.png" alt="weather-image" />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperatue-max">15° </span>
+            <span class="weather-forecast-temperatue-min">7°</span>
+          </div>
+        </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 // City choice
 function displayWeatherConditions(response) {
   console.log(response.data);
@@ -72,7 +97,6 @@ function searchCity(city) {
 }
 
 function handleSubmit(event) {
-  debugger;
   event.preventDefault();
   let city = document.querySelector(".input-city").value;
   searchCity(city);
@@ -95,6 +119,7 @@ function showFahrenheitTemp(event) {
 }
 
 function showCelsiusTemp(event) {
+  debugger;
   event.preventDefault();
   let TempElement = document.querySelector("#main-temp");
   //remove active class from celsiusLink
@@ -111,3 +136,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchCity("Amsterdam");
+displayForecast();

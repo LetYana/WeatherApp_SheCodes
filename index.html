@@ -22,58 +22,49 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body class="body">
-    <div class="container-sm">
-      <div class="city-choice">
-        <img class="local-icon" src="src/place.png" alt="local_icon" />
-        <form id="input-city-choice">
-          <input
-            class="input-city"
-            type="search"
-            placeholder="Enter a city"
-            autofocus
-            required
-            autocomplete="off"
-            onfocus="this.value=''"
-          />
-          <input class="input-city-submit" type="submit" value="Search" />
-        </form>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <div class="sun">
-            <img class="main-weather-image" src="" alt="weather-image" />
-          </div>
+    <div class="container">
+      <div class="weater">
+        <div class="city-choice">
+          <img class="local-icon" src="src/place.png" alt="local_icon" />
+          <form id="input-city-choice">
+            <input
+              class="input-city"
+              type="search"
+              placeholder="Enter a city"
+              autofocus
+              required
+              autocomplete="off"
+              onfocus="this.value=''"
+            />
+            <input class="input-city-submit" type="submit" value="Search" />
+          </form>
         </div>
-        <div class="col-6">
-          <p class="actual-date"></p>
-          <p class="actual-time"></p>
-          <p class="actual-city"></p>
-          <div class="actual-temperature">
-            <span id="main-temp"></span
-            ><sup class="units"
-              ><span id="celsius" class="active">°C</span
-              ><span class="vertical-line"> |</span>
-              <span id="fahrenheit">°F</span></sup
-            >
-          </div>
-          <p class="general-weather-description"></p>
-          <div class="space"></div>
-          <p class="wind"></p>
-        </div>
-      </div>
 
-      <div class="weather-forecast">
         <div class="row">
-          <div class="col-2">
-            <div class="weather-forecast-date">Mon</div>
-            <img class="forecast-image" src="src/01d.png" alt="weather-image" />
-            <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperatue-max">15° </span>
-              <span class="weather-forecast-temperatue-min">7°</span>
+          <div class="col-6">
+            <div class="sun">
+              <img class="main-weather-image" src="" alt="weather-image" />
             </div>
           </div>
+          <div class="col-6">
+            <p class="actual-date"></p>
+            <p class="actual-time"></p>
+            <p class="actual-city"></p>
+            <div class="actual-temperature">
+              <span id="main-temp"></span
+              ><sup class="units"
+                ><span id="celsius" class="active">°C</span
+                ><span class="vertical-line"> |</span>
+                <span id="fahrenheit">°F</span></sup
+              >
+            </div>
+            <p class="general-weather-description"></p>
+            <div class="space"></div>
+            <p class="wind"></p>
+          </div>
         </div>
+
+        <div class="weather-forecast" id="forecast"></div>
       </div>
     </div>
     <div class="git-link">

@@ -3,16 +3,18 @@
   font-family: "Manrope", sans-serif;
 }
 
-.container-sm {
+.container {
   font-family: "Manrope", sans-serif;
   background: linear-gradient(#f9fafb, #fff);
-  width: 500px;
-
   margin: 100px auto 0;
   padding-bottom: 50px;
   box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
   border: solid 5px #fff;
   border-radius: 50px;
+}
+
+.weather {
+  max-width: 600px;
 }
 
 .city-choice {
@@ -214,15 +216,20 @@ input:focus {
 
 .weather-forecast {
   margin-top: 20px;
-  margin-left: 5%;
   text-align: center;
   color: #4b5563;
-  width: 85%;
+}
+
+#forecast-column {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
 .col-2 {
   height: 200px;
-
   background: linear-gradient(#f9fafb, #fff);
   box-shadow: 0px 4px 5px -1px rgba(140, 141, 142, 0.22);
   border-radius: 40px;
@@ -238,6 +245,7 @@ input:focus {
 .forecast-image {
   margin: 5px auto;
   width: 100px;
+  text-align: center;
 }
 
 .weather-forecast-temperatures {
