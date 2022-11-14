@@ -7,8 +7,9 @@
   font-family: "Manrope", sans-serif;
   background: linear-gradient(#f9fafb, #fff);
   width: 500px;
-  height: 500px;
-  margin: 100px auto 150px;
+
+  margin: 100px auto 0;
+  padding-bottom: 50px;
   box-shadow: 1px 4px 6px 1px rgba(140, 141, 142, 0.22);
   border: solid 5px #fff;
   border-radius: 50px;
@@ -111,7 +112,7 @@ input:focus {
 }
 
 .actual-time {
-  color: #b6c3db;
+  color: #4b5563;
   font-weight: 400;
   font-size: 20px;
   margin-top: 0;
@@ -211,52 +212,50 @@ input:focus {
   display: inline;
 }
 
-.forecast-text {
-  color: #4b5563;
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 35px;
-  margin-bottom: 30px;
-  margin-left: 54px;
-}
-.five-days-forecast {
-  width: 85%;
-  margin: 0 auto;
+.weather-forecast {
+  margin-top: 20px;
+  margin-left: 5%;
   text-align: center;
+  color: #4b5563;
+  width: 85%;
 }
 
-.col {
-  height: 225px;
-  margin: 0 30px;
+.col-2 {
+  height: 200px;
+
   background: linear-gradient(#f9fafb, #fff);
   box-shadow: 0px 4px 5px -1px rgba(140, 141, 142, 0.22);
   border-radius: 40px;
 }
 
-.day-of-weak {
+.weather-forecast-date {
   text-align: center;
-  margin: 10px auto 0;
+  margin: 16px auto 0;
   font-size: 18px;
-  font-family: 300;
-}
-
-.forecast-weather-image {
-  display: inline-block;
-  margin: 15px auto;
-  width: 100px;
-}
-
-.forecast-temperature {
-  text-align: center;
-  margin: 0 auto 10px;
-  font-size: 24px;
   font-weight: 400;
 }
 
+.forecast-image {
+  margin: 5px auto;
+  width: 100px;
+}
+
+.weather-forecast-temperatures {
+  margin: 0 auto 15px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.weather-forecast-temperatue-min {
+  color: #b6c3db;
+  margin-left: 10px;
+}
+
 .git-link {
+  margin-top: 20px;
+  margin-bottom: 55px;
   font-size: 14px;
   color: #6b7280;
-  margin-right: 54px;
+  margin-right: 20%;
   text-align: right;
-  margin-top: 80px;
 }
