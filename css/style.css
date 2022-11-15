@@ -225,11 +225,12 @@ input:focus {
   justify-content: space-around;
   text-align: center;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .col-2 {
   height: 200px;
+  width: 15%;
   background: linear-gradient(#f9fafb, #fff);
   box-shadow: 0px 4px 5px -1px rgba(140, 141, 142, 0.22);
   border-radius: 40px;
@@ -252,6 +253,7 @@ input:focus {
   margin: 0 auto 15px;
   font-size: 22px;
   font-weight: 400;
+  text-align: center;
 }
 
 .weather-forecast-temperatue-min {
