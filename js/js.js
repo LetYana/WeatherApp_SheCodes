@@ -130,34 +130,4 @@ function handleSubmit(event) {
 let signUpForm = document.querySelector("#input-city-choice");
 signUpForm.addEventListener("submit", handleSubmit);
 
-//Geolocation API
-
-//fahrenheit
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let TempElement = document.querySelector("#main-temp");
-  //remove active class from celsiusLink
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let FahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  TempElement.innerHTML = Math.round(FahrenheitTemperature);
-}
-
-function showCelsiusTemp(event) {
-  debugger;
-  event.preventDefault();
-  let TempElement = document.querySelector("#main-temp");
-  //remove active class from celsiusLink
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  TempElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", showFahrenheitTemp);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showCelsiusTemp);
-
 searchCity("Amsterdam");

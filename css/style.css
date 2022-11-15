@@ -142,49 +142,10 @@ input:focus {
   color: #b6c3db;
 }
 
-.vertical-line {
-  color: #4b5563;
-  font-weight: lighter;
-}
-
-#fahrenheit.active {
+#celsius {
   color: #4b5563;
   cursor: default;
   text-decoration: none;
-}
-
-#fahrenheit.active:hover {
-  color: #4b5563;
-  font-size: inherit;
-  cursor: default;
-  text-decoration: none;
-  transition: none;
-}
-
-#fahrenheit:hover {
-  cursor: pointer;
-  font-size: 43px;
-  transition: all 0.3s ease-out;
-}
-
-#celsius.active {
-  color: #4b5563;
-  cursor: default;
-  text-decoration: none;
-}
-
-#celsius.active:hover {
-  color: #4b5563;
-  font-size: inherit;
-  cursor: default;
-  text-decoration: none;
-  transition: none;
-}
-
-#celsius:hover {
-  cursor: pointer;
-  font-size: 43px;
-  transition: all 0.3s ease-out;
 }
 
 .general-weather-description {
