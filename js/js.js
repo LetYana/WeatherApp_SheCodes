@@ -44,7 +44,8 @@ actualDate.innerHTML = `${month} ${date}, ${year}`;
 actualTime.innerHTML = `${day} ${hours}:${minutes}`;
 
 // Forecast
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let days = ["Mo", "Tu", "We", "Th", "Fr"];
 
@@ -68,6 +69,14 @@ function displayForecast() {
   console.log(forecastHTML);
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "f3fo121197815tc8ba1a4c3090d6ffbd";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 // City choice
 function displayWeatherConditions(response) {
   console.log(response.data);
@@ -83,10 +92,11 @@ function displayWeatherConditions(response) {
     ".wind"
   ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
 
-  console.log(response.data.wind.speed);
   let iconElement = document.querySelector(".main-weather-image");
   iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -136,4 +146,3 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchCity("Amsterdam");
-displayForecast();
