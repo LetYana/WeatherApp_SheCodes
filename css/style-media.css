@@ -94,6 +94,12 @@
   .forecast-column {
     border-radius: 25px;
   }
+
+  .git-link {
+    margin: 20px auto 55px;
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 470px) {
