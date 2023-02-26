@@ -7,6 +7,7 @@
     <title>Weather</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-media.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +23,7 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body class="body">
-    <div class="container">
+    <div class="main-container">
       <div class="weater">
         <div class="city-choice">
           <img class="local-icon" src="src/place.png" alt="local_icon" />
@@ -40,23 +41,25 @@
           </form>
         </div>
 
-        <div class="row">
-          <div class="col-6">
+        <div class="day-weather-row">
+          <div class="day-weather-image">
             <div class="sun">
               <img class="main-weather-image" src="" alt="weather-image" />
             </div>
           </div>
-          <div class="col-6">
-            <p class="actual-date"></p>
-            <p class="actual-time"></p>
-            <p class="actual-city"></p>
-            <div class="actual-temperature">
-              <span id="main-temp"></span
-              ><sup class="units"><span id="celsius">°C</span> </sup>
+          <div class="day-weather-descriptions">
+            <div>
+              <p class="actual-date"></p>
+              <p class="actual-time"></p>
+              <p class="actual-city"></p>
+              <div class="actual-temperature">
+                <span id="main-temp"></span
+                ><sup class="units"><span id="celsius">°C</span> </sup>
+              </div>
+              <p class="general-weather-description"></p>
+              <div class="space"></div>
+              <p class="wind"></p>
             </div>
-            <p class="general-weather-description"></p>
-            <div class="space"></div>
-            <p class="wind"></p>
           </div>
         </div>
 

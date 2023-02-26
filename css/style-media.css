@@ -1,0 +1,152 @@
+@media screen and (max-width: 1000px) {
+  .day-weather-row {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .body {
+    background-color: #fff;
+  }
+
+  .main-container {
+    background: linear-gradient(#f9fafb, #fff);
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .city-choice {
+    padding-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+
+  .day-weather-descriptions {
+    margin-left: 0;
+  }
+
+  .forecast-row {
+    padding: 0 60px;
+  }
+
+  .git-link {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: #6b7280;
+    margin-right: 20%;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .day-weather-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .actual-date {
+    margin-top: 10px;
+  }
+
+  .day-weather-descriptions {
+    margin-left: 60px;
+  }
+
+  .weather-forecast-temperatue-min {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .city-choice {
+    margin-left: 40px;
+  }
+
+  .day-weather-descriptions {
+    margin-left: 40px;
+  }
+
+  .forecast-row {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .input-city {
+    width: 230px;
+    height: 40px;
+    padding-left: 25px;
+  }
+
+  .forecast-row {
+    padding: 0 20px;
+  }
+
+  .forecast-image {
+    width: 64%;
+  }
+
+  .forecast-column {
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .city-choice {
+    margin-left: 50px;
+  }
+
+  .day-weather-descriptions {
+    margin-left: 50px;
+  }
+  .forecast-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 20px;
+  }
+
+  .forecast-column {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .weather-forecast-date {
+    margin: 0 auto 0;
+  }
+
+  .weather-forecast-temperatures {
+    margin: 0 auto 0;
+  }
+
+  .forecast-image {
+    width: 18%;
+  }
+
+  .weather-forecast-temperatue-min {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .input-city {
+    width: 70%;
+    height: 40px;
+    padding-left: 35px;
+    font-size: 14px;
+  }
+
+  .input-city-submit {
+    font-size: 14px;
+    width: 70%;
+    margin-left: 48px;
+  }
+}

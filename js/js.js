@@ -56,12 +56,12 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row" id="forecast-column">`;
+  let forecastHTML = `<div class="forecast-row" id="forecast-column">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
       forecastHTML =
         forecastHTML +
-        `<div class="col-2">
+        `<div class="forecast-column">
           <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
           <img class="forecast-image" src="src/${
             forecastDay.weather[0].icon
