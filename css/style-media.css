@@ -137,8 +137,16 @@
 }
 
 @media screen and (max-width: 450px) {
+  .local-icon {
+    display: none;
+  }
+  .city-choice {
+    padding-top: 50px;
+    margin: 0 20px 10px;
+  }
+
   .input-city {
-    width: 70%;
+    width: 60vw;
     height: 40px;
     padding-left: 35px;
     font-size: 14px;
@@ -146,7 +154,14 @@
 
   .input-city-submit {
     font-size: 14px;
-    width: 70%;
-    margin-left: 48px;
+    width: 25vw;
+  }
+
+  .main-weather-image {
+    width: 72%;
+  }
+
+  .forecast-row {
+    padding: 0 20px;
   }
 }
