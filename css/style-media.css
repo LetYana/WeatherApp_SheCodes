@@ -148,7 +148,7 @@
   }
   .city-choice {
     padding-top: 50px;
-    margin: 0 20px 10px;
+    margin: 0 7vw 10px;
   }
 
   .input-city {
@@ -169,5 +169,22 @@
 
   .forecast-row {
     padding: 0 20px;
+  }
+
+  .git-link {
+    margin: 40px auto 55px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .input-city {
+    width: 55vw;
+    height: 40px;
+    padding-left: 35px;
+    font-size: 14px;
+  }
+
+  .actual-city {
+    font-size: 32px;
   }
 }
